@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/main.css" rel="stylesheet" /> <!-- Link to external CSS file -->
+    <script src="js/script.js" defer></script> <!-- Link to external JavaScript file -->
+</head>
+<body>
+    <div class="top-bar"> <!-- Top bar section -->
+        <h1>The Smoothie Spot</h1> <!-- Heading for the top bar -->
+    </div>
+    <main>
+        <div class="left-side-nav"> <!-- Left side navigation section -->
+            <div class="nav-elements">
+              <a href="index.html">Home</a>
+              <a href="order-history.php">Order History</a>
+            </div>
+
+
+        </div>
+
+        <div class="main-content-area"> <!-- Main content area -->
+            <div class="form-area"> <!-- Form area -->
+                <div class="form-field"> <!-- Form field section -->
+
+                    <form id="smoothieForm" method="post" action="process_order.php"> <!-- Smoothie order form -->
+                        <label for="flavor">Select Flavor:</label> <!-- Flavor selection label -->
+                        <select id="flavor" name="flavor" onchange="dynamicPriceFlavour()"> <!-- Flavor selection dropdown -->
+                            <option value="none">Select Flavor</option> <!-- Default option -->
+                            <option value="strawberry">Strawberry - $4.99</option> <!-- Flavor options -->
+                            <option value="chocolate">Chocolate - $5.99</option>
+                            <option value="banana">Banana - $3.50</option>
+                            <option value="mango">Mango - $4.99</option>
+                            <option value="blueberry">Blueberry - $4.29</option>
+                        </select>
+
+                        <label for="size">Select Size:</label> <!-- Size selection label -->
+                        <select id="size" name="size" onchange="dynamicPriceSize()"> <!-- Size selection dropdown -->
+                            <option value="none">Select Size</option> <!-- Default option -->
+                            <option value="small">Small - $0</option> <!-- Size options -->
+                            <option value="medium">Medium - $1.50</option>
+                            <option value="large">Large - 2.50</option>
+                        </select>
+
+                        <label for="toppings">Toppings:</label> <!-- Toppings selection label -->
+                        <select id="toppings" name="toppings" onchange="dynamicPriceTopping()"> <!-- Toppings selection dropdown -->
+                            <option value="none">Select Topping</option> <!-- Default option -->
+                            <option value="granola">Granola - $0.50</option> <!-- Topping options -->
+                            <option value="slicedAlmonds">Sliced Almonds - $0.80</option>
+                            <option value="chocolateChips">Chocolate Chips - $0.50</option>
+                            <option value="pumpkinSeeds">Pumpkin Seeds - $0.20</option>
+                        </select>
+                        <label for="specialInstructions">Special Instructions:</label> <!-- Special instructions label -->
+                        <textarea id="specialInstructions" name="specialInstructions" placeholder="Enter special instructions"></textarea> <!-- Textarea for special instructions -->
+                        <button type="submit">Place Order</button> <!-- Button to place order -->
+                        <input type="hidden" id="totalAmount" name="totalAmount" value="">
+                    </form>
+
+                    <div id="dynamic"> <!-- Dynamic content area -->
+                        <h1>Your total will be: $ <span id="dynamicContent">0.00</span></h1> <!-- Total price display -->
+                        <button onclick="clearForm()" class="clearbutton">Clear form</button> <!-- Button to clear form -->
+                    </div>
+                </div>
+            </div><!--end of form-area-->
+        </div><!--end of main-content-area-->
+    </main>
+    <footer>
+        <small><p>Made by Don Sijo</p></small> <!-- Footer information -->
+    </footer>
+</body>
+</html>

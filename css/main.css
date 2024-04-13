@@ -1,0 +1,240 @@
+/* Reset and basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+
+/* Headings */
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+/* Layout */
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-side-nav {
+  width: 10%;
+  background-color: #D4E09B;
+  min-height: 100vh;
+}
+
+.main-content-area {
+  width: 90%;
+  background-color: #7F7F7F;
+  display: flex;
+}
+.main-content-order-history{
+  width: 90%;
+  background-color: #7F7F7F;
+}
+/* Top bar */
+.top-bar {
+  background-color: #595959;
+}
+
+.top-bar h1 {
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 30px;
+}
+
+.form-area {
+  background-color: #D4E09B;
+  margin: 30px 50px 10px 70px;
+  border-radius: 20px;
+  width: 50%;
+  margin-bottom: 200px;
+}
+
+.form-field {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"],
+textarea {
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 16px;
+}
+
+select {
+  background-color: #747373;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #ffffff;
+  box-shadow: 0 0 5px #ffffff;
+}
+
+input:hover,
+textarea:hover,
+select:hover {
+  border-color: #999;
+}
+
+label {
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #595959;
+}
+
+footer p {
+  padding: 40px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+/* Button Styles */
+button {
+  width: 50%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 30px;
+  border-style: none;
+  transition: 0.3s;
+  margin-left: 50px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #595959;
+  color: white;
+}
+
+/* Dynamic Content Styles */
+#dynamic h1 {
+  font-size: 20px;
+}
+
+/* Image Styles */
+img {
+  height: 20%;
+  margin-top: 90px;
+}
+
+/* Bill Area Styles */
+.billarea {
+  background-color: white;
+  width: 30%;
+  height: 40%;
+  margin-top: 80px;
+  border-radius: 20px;
+}
+
+.billarea h3 {
+  padding: 10px;
+}
+
+.billarea p {
+  padding: 20px;
+}
+
+/* Description Style */
+.desc-style {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#dynamicContent {
+  font-size: 30px;
+}
+
+.order-histroy-area{
+  padding: 30px;
+  background-color: white;
+  margin: 50px;
+  margin-left: 100px;
+  border-radius: 20px;
+}
+
+table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+
+
+
+      .left-side-nav .nav-elements a {
+        display: block;
+        padding: 8px 12px;
+        margin-bottom: 5px;
+        text-decoration: none;
+        color: #333;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        text-align: center;
+      }
+
+      .left-side-nav .nav-elements a:hover {
+        background-color: #e0e0e0;
+      }
+.nav-elements{
+  padding: 10px;
+}
